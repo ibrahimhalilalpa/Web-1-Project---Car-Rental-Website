@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: #ffd000;
+}
+
+/*===============MainPage Styles START===============*/
+
+
+/*===============section="MainPage" Start===============*/
+
+/*=====MainPage Nav Start=====*/
+
+.MainPageNav
+{
+    display: flex;
+    padding: 0 3%;
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: black;
+    position: fixed;
+    z-index: 94729479242;
+}
+
+.MainPageNav .MainPageNav-Logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MainPageNav .MainPageNav-Logo img
+{
+    height: 75px;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.MainPageNav-List
+{
+    list-style: none;
+    display: flex;
+    column-gap: 15px;
+    text-align: center;
+    justify-self: end;
+}
+
+.MainPageNav-List li a
+{
+    color: white;
+    text-decoration: none;
+    transition: ease 0.7s;
+}
+
+.MainPageNav-List li a:hover
+{
+    color: gold;
+    border-color: var(--main-color);
+  padding-bottom: 1rem;
+  font-size: large;
+  transition: all 0.2s ease-in-out;
+}
+
+.MainPageNav-List li #Exit
+{
+    color: white;
+    text-decoration: none;
+    transition: ease 0.7s;  
+    border: 1px solid black;
+    padding: 1px;
+    background: red;
+    border-radius: 3px;
+}
+
+.MainPageNav h2
+{
+    color: white;
+    padding-right: 50;
+    font-weight:bolder;
+    font-size: 45px;
+}
+
+
+
+.MainPageNav-Search
+
+{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+/*=====MairPage Nav Finish=====*/
+
+
+
+/*=====MairPage Search Start=====
+
+.MainPage-Search-Contanier
+{
+    padding-top: 140px;
+    background-image: linear-gradient(to bottom,#c2b4b4,#2b1b1b);
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    
+
+}
+.MainPage-Search
+{
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+.MainPage-Search-Title
+{
+    font-size: 25px;
+    font-weight: 1000;
+    line-height:normal;
+    color: rgb(53, 182, 13);
+}
+
+.MainPage-Search-Form {
+    position: relative;
+    max-width: 512px;
+    height: 100px;
+   
+}
+
+=====MairPage Search Finish=====*/
+
+
+
+/*=====MairPage Main Start=====*/
+
+.MainPage-Main {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 33, 44, 0.2), rgba(59, 35, 35, 0.1),rgb(28, 34, 50)), url(./image/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPage-Desciption {
+    align-items: center;
+    column-gap: 10px;
+    height: 80%;
+}
+
+.MainPage-Desciption h1 {
+    color: white;
+    font-size: 90px;
+    text-align: center;
+}
+
+.MainPage-Row {
+    flex-basis: 50px;
+    align-items: center;
+}
+
+.MainPage-Info {
+    font-size: 15;
+    color: rgb(255, 255, 255);
+    line-height: 15px;
+    background-color: #1f5f857e;
+}
+/*=====MairPage Main Finish=====*/
+
+
+
+/*===============section="MainPage" Finish===============*/
+
+
+
+
+
+/*===============section="Slider" Start===============*/
+
+.Slider
+{
+    position: static;
+    height: 650%;
+    /*background-color: rgb(24, 127, 153);*/
+    justify-content: center;
+    align-items: center;
+    background-color: #daaee6;
+    width: 75%; /* Div'in genişliğini belirleyin */
+    margin: 5% auto;
+}
+.Slider img
+{
+    height: 50%;
+    width:50%;
+    background-position: center;
+    background-size:contain;
+}
+
+
+/*===============section="Slider" Finish===============*/
+
+
+/*===============section="MainPage-Informatin-Cars-Contanier" Start===============*/
+
+
+.MainPage-Informatin-Cars
+{
+    background-image: linear-gradient(rgba(34, 22, 22, 0.6), rgba(216, 191, 191, 0.6)), url(./image/info.bg.jpg);
+    background-position:center;
+    background-size:cover;
+    height:75%;
+    width: 75%;
+    margin: 2% auto;
+    overflow:auto;
+
+}
+.MainPage-Informatin-Cars-Contanier
+{
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 3%;
+    text-align: center;
+}
+.MainPage-Informatin-Cars-MainTitle h2
+{
+    text-align: center;
+    color: black;
+}
+.MainPage-Informatin-Cars-SubTitle p
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+    text-decoration: underline;
+}
+.MainPage-Informatin-Cars-List ul li
+{
+    list-style: disc;
+    text-align: left;
+    color: black;
+    text-decoration:none;
+    transition: ease 0.5s;
+}
+.MainPage-Informatin-Cars-List ul li:hover
+{
+    color: gold;
+    background-color: black;
+    font-size: 15px;
+}
+
+/*===============section="MainPage-Informatin-Cars-Contanier" Finish===============*/
+/* <!-- Araba catalogu (ourcars) Başlangıç--> */
+
+
+
+.Car_Catalog
+{
+    justify-content: center;
+    align-items: center;
+    background-color: #bcced156;
+    width: 75%; /* Div'in genişliğini belirleyin */
+    margin: 1% auto;
+}
+
+
+
+.Car-Catalog-Section
+{
+    text-align: center;
+    padding: 5% auto;
+    box-sizing: border-box;
+}
+.Car_Catalog_Head
+{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 70px;
+}
+.Car_Box-CarNameH
+{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:900;
+}
+.Car_Catalog-Body
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    float: left;
+}
+
+
+.Car_Box
+{
+    width: 280px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px 15px;
+    margin: 100px 20px 10px 20px;
+    transition: all 0.5s;
+    zoom: 90%;
+}
+
+
+.Car_Catalog .false {
+    position: relative;
+    background-color: rgba(219, 156, 156, 0.5);
+    opacity: 0.9;
+}
+
+
+.Car_Catalog .false:after {
+    margin: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "RENTED";
+    font-size: 60px;
+    font-weight: 1000;
+    position: absolute;
+    transform: rotate(150);
+    color: rgb(0, 0, 0);
+    top: 25px;
+    left: 50;
+    z-index: 5;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.Car_Box:hover
+{
+    background-color: hsla(180, 81%, 42%, 0.699);
+    transition: all 0.2s ease-in;
+    scale: 110% ;
+}
+.Car_Box-Detail
+{
+    margin-top: 5px;
+    margin-right: 30px;
+    text-align: start;
+}
+.Car_Box-Detail ul
+{
+    list-style-type: none;
+    text-align: start;
+}
+
+.Car_Box-img
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 270px;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+.Car_Box-img img
+{
+    width: 250px;
+    height: 180px;
+    background-size:cover;
+    background-position: center;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+
+.Car_Box .Car_Box-CarName
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;    
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Car_Box-Price
+{
+    height: 50px;
+    width: 200px;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.Car_Box  .Car_Box-Detail
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    margin-top: 2px;
+
+
+}
+.Car_Box .Car_Box-Detail a
+{ 
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 20px 10px;
+    border: 1px solid red;
+    text-decoration: none;
+    transition: ease 0.7s;
+}
+.Car_Box  .Car_Box-Detail a:hover
+{
+    background-color: black;
+    color:white;
+    border-color: white;
+}
+
+
+.Car_Box-Button
+{
+    margin-top: 20px;    
+}
+.Car_Box-Button .Car_Box-RentBtn
+{
+    width: 150px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 700;   
+    cursor: pointer;
+    color: black;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border: 2px solid rgb(43, 105, 2);
+    text-decoration: none;
+    transition: ease-in-out 1s;
+}
+
+.Car_Box-Button .Car_Box-RentBtn:hover
+{
+    background-color: black;
+    color:white;
+    border-color: rgb(201, 236, 2);
+    transform: rotate(360deg);
+}
+
+
+.Car_Catalog .title-line {
+	color: #ffd000;
+	position: relative;
+}
+
+.Car_Catalog .title-line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	left: -60px;
+	position: absolute;
+	top: 10px;
+	width: 50px;
+}
+
+.Car_Catalog .title-line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+
+
+/* <!-- Araba catalogu (ourcars) Bitiş--> */
+
+
+
+
+/*===============section="Footer" Start===============*/
+
+.MainFooter
+{
+background-color:black;
+margin-bottom: 0;
+height: 40%;
+width: 100%;
+display: flex;
+text-align: center;
+margin: 0% auto;
+justify-content: center;
+align-items: center;
+
+}
+
+.Footer
+{
+    border: 1px solid white;
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    transition: ease 0.5s;
+    column-gap: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Footer1
+{
+    border: 1px solid black;
+    height: 100%;
+    width: 300px;
+    padding-left: 2%;
+}
+.Footer2
+{
+    border: 1px solid black;
+    height: 100%;
+    width: 300px;
+    padding-left: 2%;
+    color: white;
+    line-height: 25px;
+}
+
+.Footer3
+{
+    border: 1px solid black;
+    height: 100%;
+    width: 300px;
+    padding-left: 2%;
+}
+
+.Footer ul h6
+{
+    margin-top: 10px;
+    color: white;
+}
+
+.Footer ul li a
+{
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+}
+.Footer img
+{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media screen and (max-width:600px)
+{
+    .MainPage-Main
+    {
+        zoom: 50%;
+    }
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom:15px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    background-image: url(./image/scroll-top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 40px;
+  }
+  
+
+
+/*===============section="Footer" Finish===============*/
+
+
+
+/*===============MainPage Styles FISISH*===============*/

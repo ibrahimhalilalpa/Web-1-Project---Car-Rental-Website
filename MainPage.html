@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpa Car</title>
+
+    <!--=== Main Style CSS ===-->
+    <link rel="stylesheet" href="MainPage.css">
+
+    <!--=== Bootstrap CSS ===-->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+
+    <!--=== Mini Icon CSS ===-->
+    <!--FontAwesome CSS-->
+    <link href="Css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--favicon CSS-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+ 
+<body>
+
+    <!-- MainPage başlangıç-->
+
+    <section class="MainPage">
+        <a name="Mainpage"></a>
+
+        <!--Anasayfa Nav Çubuğu başlangıç-->
+        <div class="MainPageNav">
+            <div class="MainPageNav-Logo">
+
+                <a href="#Mainpage"> <img src="/image/MainBar.Logo.jpg" alt="logo.jpg"></a>
+                <h2><span style="color: blue;">ALPA</span>CAR</h2>
+            </div>
+            <div class="MainPageNav-Search">
+                <form name="search" onSubmit="return findInPage(this.string.value);">
+                    <input type="text" name="string" placeholder="Search for anything..." onChange="n = 0;" required="required">
+                    <button type="submit" name="submit" class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+            <ul class="MainPageNav-List">
+                <li><a href="#Mainpage"><i class="fa-solid fa-house"></i> Mainpage</a></li>
+                <li><a href="#Our Cars"><i class="fa-sharp fa-solid fa-car"></i> Our Cars</a></li>
+                <li><a href="#About"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li><a href="#Contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                <li><a onclick="Exit()" id="Exit"><i class="fa-solid fa-circle-xmark"></i> Exit  </a></li>
+            </li>
+            </ul>
+        </div>
+
+        <!--Anasayfa Nav Çubuğu bitiş-->
+
+        <!--Anasayfa Arama bitiş
+
+        <div class="MainPage-Search-Contanier">
+            <div class="MainPage-Search">
+                <h1 class="MainPage-Search-Title">Search</h1>
+                <form class="MainPage-Search-Form" name="search" onSubmit="return findInPage(this.string.value);">
+                    <input name="string" type="text" onChange="n = 0;">
+                    <input type="submit" value="Sayfada Ara" name="submit">
+                </form>
+            </div>
+        </div>
+        Anasayfa Arama bitiş-->
+
+
+        <!--Anasayfa Bilgi başlangıç-->
+
+        <div class="MainPage-Main">
+            <div class="MainPage-Desciption">
+                <div class="MainPage-Row">
+                    <H1>CARS WEBSITE
+                    </H1>
+                    <div>
+                        <p class="MainPage-Info">AlpaCar Renting: Quality car rental service. Safe, affordable prices, easy booking. Choose your vehicle now and start the journey!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Anasayfa Bilgi Bitiş-->
+    </section>
+    <!-- MainPage Bitiş-->
+
+
+    <!-- Slider başlangıç-->
+
+    <section class="slider">
+        <div id="carouselExampleIndicators" class="carousel slider" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/Cars/AllCars/Honda Civic.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Cars//AllCars/Peugeot 3008.png" class="d-block w-100" alt="olmadı">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Cars/AllCars/BMW 1.16.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Cars/AllCars/Dacia Duster 4x4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Cars/AllCars/Mercedes E200 2.0.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Cars/AllCars/Suzuki Vitara.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Slider bitiş-->
+
+
+
+    <!-- Araba Hakkıda bilgi başlangıç-->
+    <section class="MainPage-Informatin-Cars">
+        <div class="MainPage-Informatin-Cars-Contanier">
+            <div class="MainPage-Informatin-Cars-MainTitle">
+                <h2>What Should I Consider When Renting a Car?</h2>
+            </div>
+            <div class="MainPage-Informatin-Cars-SubTitle">
+                <p>We have listed the points you need to pay attention to when renting a car on the most suitable way.
+                </p>
+            </div>
+            <div class="MainPage-Informatin-Cars-List">
+                <ul>
+                    <li>Compare and examine the vehicle alternatives of different rent a car companies in detail.</li>
+                    <li>Choose from the tools that fit your needs. For example, if you have a large number of suitcases,
+                        make sure that the luggage volume of the vehicle you are renting is large.</li>
+                    <li>Check the address of the place where you will pick up and deliver the car you rented. You can
+                        consider the alternative of delivering the vehicle at a different location than the one you
+                        received it from.</li>
+                    <li>Some companies can deliver the car you will rent to your address. You can benefit from companies
+                        that provide this service.</li>
+                    <li>Remember that at least 2 years must pass from the date you got your license to rent a car.</li>
+                    <li>Make sure that you meet the necessary conditions for the vehicle you will rent.</li>
+                    <li>Read the terms of use carefully when renting a car.</li>
+                    <li>When taking delivery of your vehicle, carefully examine the insurance and contract, and check
+                        the vehicle's exterior and interior before taking delivery of the vehicle.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Araba Hakkıda bilgi bitiş-->
+
+
+
+    <!-- Araba catalogu (ourcars) Başlangıç-->
+    
+
+    <section class="Car_Catalog">
+        <a name="Our Cars"></a>
+
+        <div class="Car_Container" class="card-group">
+            <div class="Car_Catalog_Head" class="card-list">
+                <h3>CARS CATALOG</h3><span class="title-line"><i class="fa fa-car"></i></span>
+            </div>
+        </div>
+
+
+        <div class="Car-Catalog-Section row">
+            <div class="Car_Catalog-Body" id="AllCars"></div>
+        </div>
+
+    </section>
+    <!-- Araba catalogu (ourcars) Bitiş-->
+
+
+    <!-- Footer başlangıç-->
+    <section class="MainFooter">
+        <div class="Footer">
+            <div class="Footer1">
+                <ul>
+                    <h6><i class="fa-solid fa-handshake"></i> Sponsors</h6> <br>
+                    <li><a href="https://www.adidas.com.tr/" target="_blank"> <img
+                                src="./image/Footer/Sponsor-Adidas.png" class="SponsorImg"> Adidas</a></li> <br>
+                    <li><a href="https://www.trendyol.com/" target="_blank"> <img
+                                src="./image/Footer/Sponsor-Trendyol.png" class="SponsorImg"> Trendyol</a></li> <br>
+                    <li><a href="https://www.beko.com.tr/" target="_blank"> <img src="./image/Footer/Sponsor-Beko.png"
+                                class="SponsorImg"> Beko</a></li> <br>
+                    <li><a href="https://www.yemeksepeti.com/" target="_blank"> <img
+                                src="./image/Footer/Sponsor-YemekSepeti.png" class="SponsorImg"> Yemek Sepeti</a></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="Footer2">
+                <ul>
+                    <h6><i class="fa-solid fa-address-card"></i> About</h6> <br>
+                    <a name="About"></a>
+                    <li><a href="About.html" target="_blank">Neden AlpaCar</a></li>
+                    <li><a href="About.html" target="_blank">Konum</a></li>
+                    <li><a href="About.html" target="_blank">Ekibimiz</a></li>
+                    <li><a href="About.html" target="_blank">Bağlı Şirketler</a></li>
+                    <li><a href="About.html" target="_blank">İnsan Kaynakları</a></li>
+                    <li><a href="About.html" target="_blank">Basın</a></li>
+                    <li><a href="About.html" target="_blank">Yardım</a></li>
+                </ul>
+            </div>
+            <div class="Footer3">
+                <ul>
+                    <h6><i class="fi-xwluxl-comment-dots-wide"></i> Contact</h6> <br>
+                    <a name="Contact"></a>
+
+                    <li><a href="https://github.com/ibrahimhalilalpa" target="_blank"> <img
+                                src="./image/Footer/Contact-GitHub.png" class="SponsorImg"> GitHub</a></li> <br>
+                    <li><a href="mailto:ibrahimhalilalpa21@gmail.com" target="_blank"> <img
+                                src="./image/Footer/Contact-Mail.png" class="SponsorImg"> Mail</a>
+                    </li> <br>
+                    <li><a href="https://www.instagram.com/alpa.1903" target="_blank"> <img
+                                src="./image/Footer/Contact-Instagram.png" class="SponsorImg"> Instagram</a></li> <br>
+                    <li><a href="https://www.facebook.com/RakBenadam26" target="_blank"> <img
+                                src="./image/Footer/Contact-Facebook.png" class="SponsorImg"> Facebook</a></li> <br>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer bitiş-->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    <script>
+        // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+    </script>
+    <!--=======================Javascript============================-->
+
+    <script>
+        function Exit()
+        {
+        if (confirm("Do you want to leave this site? \n\nEither OK or Cancel."))
+          window.location.replace("index.html");
+        }
+     </script>
+
+    <section>
+        <!--=== Mian Js ===-->
+        <script src="/Js/Firebase.js"></script>
+        <script src="Js/bootstrap.min.js"></script>
+
+        <!--Mini İcon Js-->
+        <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+        <!--Other Page Js-->
+
+        <script src="CarListe.js" type="module"></script>
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+            </script>
+
+
+
+
+        <!--Search JS-->
+        <script language="JavaScript">
+            //http://www.hazirkod.com/ab82016e-ac85-4bd7-a853-16dbf5b83a30/14/java-script/sayfa-icinde-arama--.html
+            var NS4 = (document.location); // hangi browser?
+            var IE4 = (document.all);
+
+            var win = window; // pencere icinde aramak.
+            var n = 0;
+
+            function findInPage(str) {
+
+                var txt, i, found;
+
+                if (str == "")
+                    return false;
+
+                if (NS4) {
+
+                    if (!win.find(str))
+                        while (win.find(str, false, true))
+                            n++;
+                    else
+                        n++;
+
+                    if (n == 0)
+                        alert(" .");
+                }
+
+                if (IE4) {
+                    txt = win.document.body.createTextRange();
+
+                    for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
+                        txt.moveStart("character", 1);
+                        txt.moveEnd("textedit");
+                    }
+
+                    if (found) {
+                        txt.moveStart("character", -1);
+                        txt.findText(str);
+                        txt.select();
+                        txt.scrollIntoView();
+                        n++;
+                    }
+
+                    else {
+                        if (n > 0) {
+                            n = 0;
+                            findInPage(str);
+                        }
+
+                        else
+                            alert("Sonuç bulunamadı.");
+                    }
+                }
+
+                return false;
+            }
+
+        </script>
+
+
+<script>
+
+$("body").on("click", ".Car_Box-RentBtn", function () {
+    var $key = $(this).data("key");
+    window.localStorage.setItem("CarID",$key);
+    console.log($key);
+    location.href="RentingPage.html";
+
+})
+
+
+</script>
+
+<!--sweetalert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </section>
+
+
+</body>
+
+</html>

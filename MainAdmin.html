@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage</title>
+    <link rel="stylesheet" href="/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="MainAdmin.css">
+    <!--favicon CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="MainPageNav">
+        <div class="MainPageNav-Logo">
+
+            <a href="#"> <img src="/image/MainBar.Logo.jpg" alt="logo.jpg"></a>
+            <h2><span style="color: blue;">ALPA</span>CAR</h2>
+        </div>
+        <ul class="MainPageNav-List">
+            <li><a href="MainPage.html" target="_blank"><i class="fa-solid fa-house"></i> Mainpage</a></li>
+            <li><a onclick="Exit()" id="Exit"><i class="fa-solid fa-circle-xmark"></i> Exit </a></li>
+
+            </li>
+
+        </ul>
+    </div>
+    <!--Anasayfa Nav Çubuğu bitiş-->
+
+
+
+    <div class="tabContainer">
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'DataCarTable')">Data Car Table</button>
+            <button class="tablinks" onclick="openCity(event, 'DataUserTable')">Data User Table</button>
+            <button class="tablinks" onclick="openCity(event, 'CrimeManagement')">Car Management</button>
+        </div>
+
+        <div id="Welcome" class="tabcontent">
+            <div id="Welcome1">
+                <p>Welcome to the Adminpage!</p>
+            </div>
+        </div>
+
+
+        <div id="DataCarTable" class="tabcontent">
+            <div class="container mt-3" style="margin-top: 750px; position: static; z-index: 5;">
+                <input type="text" id="SearchBox1" onkeyup="SearchBox1()" placeholder="Search...">
+
+                <table class="table table-dark" id="dataTbl">
+                    <thead>
+                        <th>Num</th>
+                        <th>Car ID</th>
+                        <th>Car Name</th>
+                        <th>Car Model</th>
+                        <th>Car Price</th>
+
+                        <th>Car AgeLimit</th>
+                        <th>Car Passenger</th>
+                        <th>Car Suitcase</th>
+                        <th>Car Gear</th>
+
+                        <th>Car FuelType</th>
+                        <th>Car CategoriType</th>
+                        <th>Car Status</th>
+                        <th>Status Option</th>
+
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="DataUserTable" class="tabcontent">
+            <div class="container mt-3" style="margin-top: 750px; position: static; z-index: 5;">
+                <input type="text" id="SearchBox2" onkeyup="SearchBox2()" placeholder="Ara...">
+
+                <table class="table table-dark" id="dataTblUser">
+                    <thead>
+                        <th>Num</th>
+                        <th>Username</th>
+                        <th>User Email</th>
+                        <th>Last Login</th>
+                        <th>Rank No</th>
+                        <th>Rank Option</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="CrimeManagement tabcontent" id="CrimeManagement">
+            <div id="divform">
+                <h1>Crime Management</h1>
+                <div class="CrimeManagement-Options-Div">
+                    Limit Of Age:
+                    <div class="case">
+                        <select name="AgeLimit" id="AgeLimit">
+                            <option value="18">+18</option>
+                            <option value="21">+21</option>
+                            <option value="24" selected>+24</option>
+                            <option value="27">+27</option>
+                            <option value="30">+30</option>
+                        </select>
+                    </div>
+                    Failin Yaşı:
+                    <div class="case">
+                        <select name="FailinYas" id="FailinYas">
+                            <option value="1">18-25</option>
+                            <option value="2">26-30</option>
+                            <option value="3">31-35</option>
+                            <option value="4">36+</option>
+                        </select>
+                    </div>
+        
+                    İl/ilçe:
+                    <div class="case">
+                        <select name="CrimeLocation" id="CrimeLocation">
+                            <option value="Tekirdağ" selected>Tekirdağ</option>
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="Ankara">Ankara</option>
+                            <!-- Diğer şehirler eklenebilir -->
+                        </select>
+                    </div>
+                    Öldürülme Şekli:
+                    <div class="case">
+                        <select name="CrimeMethod" id="CrimeMethod">
+                            <option value="Ateşli Silah" selected>Ateşli Silah</option>
+                            <option value="Bıçak">Bıçak</option>
+                            <option value="Boğma">Boğma</option>
+                            <option value="Darp">Darp</option>
+                        </select>
+                    </div>
+                    Failin Durumu:
+                    <div class="case">
+                        <select name="FailDurumu" id="FailDurumu">
+                            <option value="Tutuklu">Tutuklu</option>
+                            <option value="Serbest">Serbest</option>
+                            <option value="İntihar" selected>İntihar</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="CrimeManagement-TwoPart1">
+                    <div class="CrimeManagement-TwoPart2">
+                        <div class="CrimeManagement-Text-Div">
+                            <input type="number" placeholder="Crime ID" class="txt1 txt" id="CrimeID" name="CrimeID"> <br>
+                            <input type="text" value="Irmak Yaşar" class="txt2 txt" id="VictimName" name="VictimName"> <br>
+                            <input type="number" value="25" class="txt2 txt" id="VictimAge" name="VictimAge">
+                            <br>
+                            <input type="text" value="Tespit Edilemeyen" class="txt3 txt" id="Reason" name="Reason">
+                            <br>
+                            <input type="text" value="Babası" class="txt3 txt" id="Killer" name="Killer">
+                            <br>
+                            <input type="text" value="Yok" class="txt3 txt" id="ProtectionRequest" name="ProtectionRequest">
+                            <br>
+                        </div>
+                        <div class="CrimeManagement-Image">
+                            <input type="text" class="txt" id="CrimeImageName">
+                            <label id="extlab"></label> <br><br>
+                            <img id="CrimeImage"> <br><br>
+                            <button id="selbtn">Select Image</button>
+                        </div>
+                    </div>
+        
+                    <div class="CrimeManagement-Button-Div">
+                        <input type="button" value="Add" class="btn" id="btnAdd" name="Add">
+                        <input type="button" value="Update" class="btn" id="btnUpdate" name="Update">
+                        <input type="button" value="Delete" class="btn" id="btnDelete" name="Delete">
+                        <input type="button" value="Get" class="btn" id="btnGet" name="Get">
+                    </div>
+                </div>
+            </div>
+        
+            <p class="p"><a href="MainAdmin.html">Clear Form</a></p>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--************************JAVASCRIPT**************************-->
+
+    <script src="MainAdmin.js" type="module"></script>
+    <script src="/Js/Firebase.js"></script>
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        window.onload = hidding();
+        function hidding() {
+            document.getElementById('Welcome').style.display = 'block';
+            document.getElementById('DataUserTable').style.display = 'none';
+            document.getElementById('DataCarTable').style.display = 'none';
+            document.getElementById('CarManagement').style.display = 'none';
+        }
+
+
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+    </script>
+
+
+    <!--Table scrit start-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <!--ARAMA JS-->
+    <script>
+        //https://klavyeisaretleri.blogspot.com/2019/03/javascript-tablo-icerisinde-arama-yapma-kodu.html
+        function SearchBox1() {
+            var e, t, n, a, l;
+            for (e = document.getElementById("SearchBox1").value.toUpperCase(), t = document.getElementById("dataTbl").getElementsByTagName("tr"), l = 1; l < t.length; l++) {
+                t[l].style.display = "none", n = t[l].getElementsByTagName("td");
+                for (var m = 0; m < n.length; m++)
+                    if ((a = t[l].getElementsByTagName("td")[m]) && a.innerHTML.toUpperCase().indexOf(e) > -1) {
+                        t[l].style.display = "";
+                        break
+                    }
+            }
+        }
+    </script>
+
+    <script>
+        //https://klavyeisaretleri.blogspot.com/2019/03/javascript-tablo-icerisinde-arama-yapma-kodu.html
+        function SearchBox2() {
+            var e, t, n, a, l;
+            for (e = document.getElementById("SearchBox2").value.toUpperCase(), t = document.getElementById("dataTblUser").getElementsByTagName("tr"), l = 1; l < t.length; l++) {
+                t[l].style.display = "none", n = t[l].getElementsByTagName("td");
+                for (var m = 0; m < n.length; m++)
+                    if ((a = t[l].getElementsByTagName("td")[m]) && a.innerHTML.toUpperCase().indexOf(e) > -1) {
+                        t[l].style.display = "";
+                        break
+                    }
+            }
+        }
+    </script>
+
+
+    <!--Exit page-->
+
+    <script>
+        function Exit() {
+            if (confirm("Do you want to leave this site? \n\nEither OK or Cancel."))
+                window.location.replace("LoginPage.html");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

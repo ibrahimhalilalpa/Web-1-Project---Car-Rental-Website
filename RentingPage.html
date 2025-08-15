@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renting Page</title>
+  <link rel="stylesheet" href="RentingPage.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!--=== Mini Icon CSS ===-->
+  <!--FontAwesome CSS-->
+  <link href="font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--favicon CSS-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+
+  <div class="Container">
+    <!--Anasayfa Nav Çubuğu başlangıç-->
+    <div class="MainPageNav">
+      <div class="MainPageNav-Logo">
+
+        <a href="#"> <img src="/image/MainBar.Logo.jpg" alt="logo.jpg"></a>
+        <h2><span style="color: blue;">ALPA</span>CAR</h2>
+      </div>
+
+
+      <ul class="MainPageNav-List">
+        <li><a href="MainPage.html"><i class="fa-solid fa-house"></i> Mainpage</a></li>
+        <li><a href="#About"><i class="fa-solid fa-address-card"></i> About</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="Top">
+      <div id="FromWhereDiv" class="FromWhereDiv">
+        <label for="">From Where:</label>
+        <select name="FromWhere" id="FromWhere">
+          <option value="Adana">Adana</option>
+          <option value="Antalya">Antalya</option>
+          <option value="Mersin">Mersin</option>
+          <option value="Gaziantep">Gaziantep</option>
+          <option value="Muğla">Muğla</option>
+          <option value="Ankara">Ankara</option>
+          <option value="Niğde">Niğde</option>
+          <option value="Hatay">Hatay</option>
+        </select>
+      </div>
+
+
+      <div id="ToWhereDiv" class="ToWhereDiv">
+        <label for="">To Where:</label>
+        <select name="ToWhere" id="ToWhere">
+          <option value="Adana">Adana</option>
+          <option value="Antalya">Antalya</option>
+          <option value="Mersin">Mersin</option>
+          <option value="Gaziantep">Gaziantep</option>
+          <option value="Muğla">Muğla</option>
+          <option value="Ankara">Ankara</option>
+          <option value="Niğde">Niğde</option>
+          <option value="Hatay">Hatay</option>
+
+
+        </select>
+      </div>
+
+
+      <div id="DateRange" class="DateRange" name="DateRange">
+        <label for="">Rental Range:</label>
+        <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" id="DateBox" />
+      </div>
+
+    </div>
+
+
+    <div class="Container1">
+      <div class="Car_Box" id="Car_Box">
+      </div>
+  
+  
+      <!--Register Section-->
+      <div class="RegisterForm">
+        <h1>Register:</h1>
+        <div class="Middle">
+  
+          <div class="MidTop1">
+            <h6>DRIVE INFORMATION</h6> <br>
+  
+            <div>
+              <label>First Name:</label>
+              <input type="text" id="FirstNameId" placeholder="İbrahim Halil" required>
+            </div>
+            <div>
+              <label>Last Name:</label>
+              <input type="text" id="LastNameId" placeholder="Alpa" required>
+            </div>
+            <div class="MidTop12">
+              <div class="MidTop12_">
+                <label for="TCId">TC:</label>
+
+                <input type="text" id="TCId" pattern="[0-9]{11}" minlength="1" maxlength="11"
+                  placeholder="**********" required> <br>
+
+              </div>
+              <div class="MidTop12_">
+                <label for="AgeId">Age:</label>
+                <input type="number" id="AgeId" maxlength="100" min="18" required>
+              </div>
+              <div class="MidTop12_">
+                <label for="LicenseId">License:</label>
+                <input type="text" id="LicenseId" required>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="MidTop2">
+            <h6>CONTACT INFORMATION</h6> <br>
+  
+            <div class="MidTop2_1">
+              <div>
+                <label for="EmailId">Email Adresi:</label> <br>
+                <input type="email" id="EmailId" name="EmailId" required placeholder="example@hotmail.com"><br>
+              </div>
+              <div>
+                <label>Phone Number:</label> <br>
+                <input type="tel" id="PhoneId" pattern="[0-0]{1} [0-9]{3} [0-9]{3} [0-9]{4}" minlength="14" maxlength="14"
+                  placeholder="0 541 710 0000" required> <br>
+              </div>
+            </div>
+  
+            <div>
+              <label for="address">Address:</label>
+              <textarea id="AddressId" name="address" rows="2" cols="65" required></textarea>
+            </div>
+  
+          </div>
+  
+  
+        </div>
+      </div>
+  
+      <!--Renting Car Section-->
+  
+  
+      <div class="RentDiv">
+        <Label>Normal Rental Price: </Label><s><span id="CarPriceSpanNormalFiyat"></s></span> <br><br>
+        <Label>Discount Amount: </Label><span id="CarPriceSpanIndirimMiktarı"></span> <br><br>
+        <Label>Net Rental Price: </Label><span id="CarPriceSpanİndirimliFiyat"></span> <br><br>
+        <button id="CarPriceBtn" value="Calculate">Rent</button>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  </div>
+
+
+
+  </div>
+
+
+  <!-- Footer başlangıç-->
+  <section class="MainFooter">
+    <div class="Footer">
+      <div class="Footer1">
+        <ul>
+          <h6><i class="fa-solid fa-handshake"></i> Sponsors</h6> <br>
+          <li><a href="https://www.adidas.com.tr/" target="_blank"> <img src="./image/Footer/Sponsor-Adidas.png"
+                class="SponsorImg"> Adidas</a></li> <br>
+          <li><a href="https://www.trendyol.com/" target="_blank"> <img src="./image/Footer/Sponsor-Trendyol.png"
+                class="SponsorImg"> Trendyol</a></li> <br>
+          <li><a href="https://www.beko.com.tr/" target="_blank"> <img src="./image/Footer/Sponsor-Beko.png"
+                class="SponsorImg"> Beko</a></li> <br>
+          <li><a href="https://www.yemeksepeti.com/" target="_blank"> <img src="./image/Footer/Sponsor-YemekSepeti.png"
+                class="SponsorImg"> Yemek Sepeti</a></li>
+          <br>
+        </ul>
+      </div>
+      <div class="Footer2">
+        <ul>
+          <h6><i class="fa-solid fa-address-card"></i> About</h6> <br>
+          <a name="About"></a>
+          <li><a href="About.html" target="_blank">Neden AlpaCar</a></li>
+          <li><a href="About.html" target="_blank">Konum</a></li>
+          <li><a href="About.html" target="_blank">Ekibimiz</a></li>
+          <li><a href="About.html" target="_blank">Bağlı Şirketler</a></li>
+          <li><a href="About.html" target="_blank">İnsan Kaynakları</a></li>
+          <li><a href="About.html" target="_blank">Basın</a></li>
+          <li><a href="About.html" target="_blank">Yardım</a></li>
+        </ul>
+      </div>
+      <div class="Footer3">
+        <ul>
+          <h6><i class="fi-xwluxl-comment-dots-wide"></i> Contact</h6> <br>
+          <a name="Contact"></a>
+
+          <li><a href="https://github.com/ibrahimhalilalpa" target="_blank"> <img
+                src="./image/Footer/Contact-GitHub.png" class="SponsorImg"> GitHub</a></li> <br>
+          <li><a href="mailto:ibrahimhalilalpa21@gmail.com" target="_blank"> <img src="./image/Footer/Contact-Mail.png"
+                class="SponsorImg"> Mail</a>
+          </li> <br>
+          <li><a href="https://www.instagram.com/alpa.1903" target="_blank"> <img
+                src="./image/Footer/Contact-Instagram.png" class="SponsorImg"> Instagram</a></li> <br>
+          <li><a href="https://www.facebook.com/RakBenadam26" target="_blank"> <img
+                src="./image/Footer/Contact-Facebook.png" class="SponsorImg"> Facebook</a></li> <br>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <!-- Footer bitiş-->
+</body>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+
+<!---------------Calculation of price------------------>
+
+<script>
+  $('input[name="dates"]').daterangepicker();
+
+  $(function () {
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'left'
+    }, function (start, end) {
+      var fark = new Date(end - start),
+
+        Day = Math.floor(fark / 1000 / 60 / 60 / 24);
+
+      //var CarPrice =     document.getElementById('CarPrice').value = data.CarPrice;
+
+      //var ucret = gun*CarPrice;
+
+      window.localStorage.setItem("Day", Day);
+      window.alert("Total rental days: "+Day);
+      //window.alert(ucret);
+
+      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      //var Car_Price = document.getElementById('CarPrice').value;
+      var gg = document.getElementById('CarPrice').textContent;
+
+      var price = Day * gg;
+      document.getElementById('CarPriceSpanNormalFiyat').textContent = price;
+      document.getElementById('CarPriceSpanİndirimliFiyat').textContent = price - (price * (20 / 100));
+      document.getElementById('CarPriceSpanIndirimMiktarı').textContent = price - price - (price * (20 / 100));
+
+    });
+  });
+</script>
+
+
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getDatabase, set, ref, push, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAdGhUjTZuzmk7GQlmmIJR3qnSvUbu3Fo0",
+    authDomain: "alparentacar-e35c4.firebaseapp.com",
+    projectId: "alparentacar-e35c4",
+    storageBucket: "alparentacar-e35c4.appspot.com",
+    messagingSenderId: "230825226127",
+    appId: "1:230825226127:web:6493468d74ef155ab465fa",
+    measurementId: "G-29VF6RPVX4"
+  };
+
+
+
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  window.onload = resfreshtable();
+  //Araba Listeleme
+
+  function resfreshtable() {
+    var CarId = window.localStorage.getItem("CarID");
+    var UserId = window.localStorage.getItem("UserId")
+    console.log(CarId + "     " + UserId);
+
+    $('#dataTbl td').remove();
+    const dbRef = ref(database, 'Cars/' + CarId);
+
+    onValue(dbRef, (snapshot) => {
+
+      const childKey = snapshot.key;
+      const childData = snapshot.val();
+      // ...
+
+      var row = "<div class='Car_Box-CarName'> <span class='Car_Box-CarNameH'> "
+        + childData.CarName + "</span> </div> <div class='Car_Box-img'> <img src=" + childData.image + " alt='car-image'> </div> <div class='Car_Box-Price'> <span class='h3 text-warning' id='CarPrice'>"
+        + childData.CarPrice + "</span>/Week </div> <div class='Car_Box-Detail'> <ul class='fa-ul'> <li><span class='fa-li'><span class='fas fa-car-side text-warning'></span></span> <strong>"
+        + childData.AgeLimit + "</strong> Min Age</li> <li><span class='fa-li'><span class='fas fa-users text-warning'></span></span> <strong>"
+        + childData.CarPassenger + "</strong> Passengers</li> <li><span class='fa-li'><span class='fas fa-suitcase text-warning'></span></span> <strong>"
+        + childData.CarSuitcase + "</strong> Suitcases</li> <li><span class='fa-li'><i class='fa-solid fa-code-branch text-warning '></i></span></span>"
+        + childData.CarGear + "</li> <li><span class='fa-li'><span class='fas fa-gas-pump text-warning'></span></span>"
+        + childData.CarFuelType + "</li> <li><span class='fa-li'><i class='fa-sharp fa-solid fa-calendar text-warning'></i></span><strong>"
+        + childData.CarModel + "</strong> Model</li> <li><span class='fa-li'><i class='fa-solid fa-bars-staggered text-warning'></i></span>"
+        + childData.CarCategoriType + "</li> </ul> </div>";
+
+      $(row).appendTo('#Car_Box');
+
+    }, {
+      onlyOnce: true
+    });
+  }
+</script>
+
+
+
+<script type="module" src="RentingPage.js"></script>
+
+
+
+<!--sweetalert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

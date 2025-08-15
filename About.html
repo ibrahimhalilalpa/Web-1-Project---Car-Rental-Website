@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        *   
+        {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        }
+        body
+        {
+            background-color: aqua;
+        }
+        /*=====MainPage Header Start=====*/
+        .MainPageNav
+        {
+        display: flex;
+        padding: 0 5%;
+        height: 10%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        position: absolute;
+        position: sticky; top:0px;
+        z-index: 500;
+        }
+
+        .MainPageNav .MainPageNav-Logo
+        {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .MainPageNav .MainPageNav-Logo img
+        {
+        height: 90px;
+        width: 90px;
+        margin-right: 20px;
+        margin-top: 5px;
+        }
+        
+        .MainPageNav-List
+        {
+        list-style: none;
+        display: flex;
+        column-gap: 15px;
+        text-align: center;
+        justify-self: center;
+        }
+        
+        .MainPageNav-List li a
+        {
+        color: white;
+        text-decoration: none;
+        transition: ease 0.7s;
+        }
+        
+        .MainPageNav-List li a:hover
+        {
+        color: gold;
+        border-color: var(--main-color);
+        padding-bottom: 1rem;
+        transition: all 0.2s ease-in-out;
+        }
+        
+        .MainPageNav h2
+        {
+        color: white;
+        padding-right: 50;
+        font-weight:bolder;
+        font-size: 45px;
+        }
+        /*=====MairPage Header Finish=====*/
+
+        /*=====MairPage Body Start=====*/
+        
+        .About-Container
+        {
+        display: flex;
+        padding-left: 5%;
+        padding-right:55%;
+        }
+        
+        
+        
+        .WhyAlpaCar-Div
+        {
+            text-align: center;
+            background-color: gray;
+            padding: 10px;
+            margin: 5% 10% 10% 10%;
+            position: static;
+
+        }
+        .WhyAlpaCar-Div ul li
+        {
+            list-style-type: none;
+        }
+
+
+        .OurTeam
+        {
+            text-align: center;
+            background-color: rgb(10, 42, 131);
+            padding: 5px;
+            margin: 10% ;  
+            height: 700px;
+            
+        }      
+        .OurTeam p
+        {
+            color: rgb(196, 165, 165);
+        }
+  
+        .Workers
+        {
+            margin-top: 10px;
+            line-height: 18px;
+            padding: 5px;
+            text-align: center;
+
+        }
+        .level1
+        {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: center;
+        margin-bottom: 50px;
+        }
+        .level1 img
+        {
+            border-radius: 1% 11%;
+            box-shadow: 34px -20px 90px 1px rgba(102,9,9,0.75);
+        }
+
+        .level2
+        {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
+        margin-bottom:50px;
+        }
+        .level2 img
+        {
+            border-radius: 25% 5% ;
+            box-shadow: 5px 2px 3px 5px gray;
+
+        }
+
+        .level3
+        {
+        display: flex;
+        padding-left: 5%;
+        padding-right:5%;
+        justify-content: space-between;
+        }
+        .level3 img
+        {
+            border-radius: 25% 25% ;
+            box-shadow: 5px 5px black;
+
+        }
+
+        .OurTeam img
+        {
+            text-align: center;
+            background-size:cover;
+            background-position:center;
+            width: 100px;
+            height: 100px;
+        }
+        
+        
+        .AffiliatedCompanies-Div
+        {
+            text-align: center;
+            background-color: darkkhaki;
+            padding: 10px;
+            margin: 5% 10% 10% 10%;
+            position: static;
+
+        }
+        .AffiliatedCompanies-Div ul li
+        {
+            list-style-type: none;
+        }
+
+        .HumanResources-Div
+        {
+            text-align: center;
+            background-color: darkolivegreen;
+            padding: 10px;
+            margin: 5% 10% 10% 10%;
+            position: static;
+
+        }
+        .HumanResources-Div ul li
+        {
+            list-style-type: none;
+        }
+        
+        .Help-Div
+        {
+            text-align: center;
+            background-color: firebrick;
+            padding: 10px;
+            margin: 5% 10% 10% 10%;
+            position: static;
+
+        }
+        .Help-Div ul li
+        {
+            list-style-type: none;
+        }
+        
+        
+        
+        
+        /*=====MairPage Body Finish=====*/
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+<section class="Header">
+    <div class="MainPageNav">
+        <div class="MainPageNav-Logo">
+
+            <a href="#"> <img src="/image/MainBar.Logo.jpg" alt="logo.jpg"></a>
+            <h2><span style="color: blue;">ALPA</span>CAR</h2>
+        </div>
+        <ul class="MainPageNav-List">
+            <li><a href="index.html">Mainpage</a></li>
+
+            <li><a href="#OurTeam">Our Team</a></li>
+            <li><a href="#WhyAlpaCar">Why Alpa Car</a></li>
+
+            <li><a href="#AffiliatedCompanies">Affiliated Companies</a></li>
+            <li><a href="#HumanResources">Human Resources</a></li>
+            <li><a href="#Help">Help</a></li>
+
+        </ul>
+    </div>
+</section>
+
+
+<section class="Body">
+<div class="About-Container"></div>
+
+
+
+<div class="OurTeam">
+    <a name="OurTeam"></a>
+
+    <h2>Our Team</h2>
+    <div class="Workers">
+
+        <div class="level1">  
+            <div class="Yonetici">
+            <div>
+                <img src="./image/About/Ceo.jpg" alt="car-image">
+            </div>
+            <div>
+                <h4>Manager</h4>
+                <p>İbrahim Halil Alpa</p>
+            </div>
+            </div> 
+        </div> 
+    
+
+        <div class="level2">
+            <div class="Yardımcılar">  
+        
+                <div class="">
+                    <img src="./image/About/MudurYar1.jpg" alt="car-image">
+                </div>
+                <div class="Car_Box-CarName">
+                    <h4>Assistant Director</h4>
+                    <p>Burak Bilgin</p>
+                </div>
+            </div>  
+    
+            <div class="Yardımcılar">  
+            
+                <div class="">
+                    <img src="./image/About/MudurYar2.jpg" alt="car-image">
+                </div>
+                <div class="Car_Box-CarName">
+                    <h4>Assistant Director</h4>
+                    <p>Gürkan Şimşek</p>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="level3">
+
+            <div class="Diğer">  
+                <div class="">
+                    <img src="./image/About/1.jpg" alt="car-image">
+                </div>
+                <div class="Car_Box-CarName">
+                    <h4>Assistant</h4>
+                    <p>Deniz Gençtürk</p>
+                </div>
+            </div>  
+
+            <div class="Diğer">
+                <div class="">
+                    <img src="./image/About/2.jpg" alt="car-image">
+                </div>
+                <div class="Car_Box-CarName">
+                    <h4>Human Resources</h4>
+                    <p>Mehmet Alpa</p>
+                </div>
+            </div>  
+
+            <div class="Diğer">  
+                <div class="">
+                    <img src="./image/About/3.jpg" alt="car-image">
+                </div>
+                <div class="Car_Box-CarName">
+                    <h4>Tea Service</h4>
+                    <p>Mehmet Çelik</p>
+                </div>
+            </div>  
+
+            <div class="Diğer">  
+                <div class="">
+                    <img src="./image/About/4.jpg" alt="car-image">
+                </div>
+                <div class="Car_Box-CarName">
+                    <h4>Cleaner</h4>
+                    <p>Kazım Koçyiğit</p>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+
+</div>
+
+<div class="WhyAlpaCar-Div">
+    <a name="WhyAlpaCar"></a>
+
+    <h2>Why AlpaCar?</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum accusamus eveniet itaque architecto recusandae nostrum, explicabo veniam repellat! Amet, autem.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, distinctio dolores.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores reprehenderit maxime, minima debitis architecto cum quam deserunt? Ex, cumque fugit? Deserunt ipsa distinctio vitae corrupti natus velit quasi doloremque!</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam hic cumque porro ad reprehenderit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorum.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo.</li>
+    </ul>
+</div>
+
+<div class="AffiliatedCompanies-Div">
+    <a name="AffiliatedCompanies"></a>
+
+    <h2>Affiliated Companies</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum accusamus eveniet itaque architecto recusandae nostrum, explicabo veniam repellat! Amet, autem.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, distinctio dolores.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores reprehenderit maxime, minima debitis architecto cum quam deserunt? Ex, cumque fugit? Deserunt ipsa distinctio vitae corrupti natus velit quasi doloremque!</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam hic cumque porro ad reprehenderit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorum.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo.</li>
+    </ul>
+</div>
+
+<div class="HumanResources-Div">
+    <a name="HumanResources"></a>
+
+    <h2>Human Resources</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum accusamus eveniet itaque architecto recusandae nostrum, explicabo veniam repellat! Amet, autem.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, distinctio dolores.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores reprehenderit maxime, minima debitis architecto cum quam deserunt? Ex, cumque fugit? Deserunt ipsa distinctio vitae corrupti natus velit quasi doloremque!</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam hic cumque porro ad reprehenderit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorum.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo.</li>
+    </ul>
+</div>
+
+<div class="Help-Div">
+    <a name="Help"></a>
+
+    <h2>Help</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum accusamus eveniet itaque architecto recusandae nostrum, explicabo veniam repellat! Amet, autem.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, distinctio dolores.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores reprehenderit maxime, minima debitis architecto cum quam deserunt? Ex, cumque fugit? Deserunt ipsa distinctio vitae corrupti natus velit quasi doloremque!</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam hic cumque porro ad reprehenderit!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorum.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo.</li>
+    </ul>
+</div>
+
+
+
+
+<!--sweetalert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+
+</section>
+</body>
+</html>

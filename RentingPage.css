@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0% auto;
+
+}
+
+
+
+
+.Container1
+{
+    margin: 5% 5%;
+    width: 90%;
+}
+/*=====RentingPage Nav Start=====*/
+
+.MainPageNav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: black;
+    position: sticky;
+    z-index: 500;
+}
+
+.MainPageNav .MainPageNav-Logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MainPageNav .MainPageNav-Logo img {
+    height: 75px;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.MainPageNav-List {
+    list-style: none;
+    display: flex;
+    column-gap: 15px;
+    text-align: center;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.MainPageNav-List li a {
+    color: white;
+    text-decoration: none;
+    transition: ease 0.7s;
+}
+
+.MainPageNav-List li a:hover {
+    color: gold;
+    border-color: var(--main-color);
+    padding-bottom: 1rem;
+    font-size: large;
+    transition: all 0.2s ease-in-out;
+}
+
+.MainPageNav-List li #Exit {
+    color: white;
+    text-decoration: none;
+    transition: ease 0.7s;
+    border: 1px solid black;
+    padding: 1px;
+    background: red;
+    border-radius: 3px;
+}
+
+.MainPageNav h2 {
+    color: white;
+    padding-right: 50;
+    font-weight: bolder;
+    font-size: 45px;
+}
+/*=====RentingPage Nav Finish=====*/
+
+
+/*=====RentingPage Place and Date Start=====*/
+
+.Top {
+    width: 100%;
+    height: 25%;
+    position: static;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1b88677a;
+}
+
+.Top select, #DateBox {
+    margin: 10% auto;
+    font-size: large;
+    
+}
+
+
+#DateBox {
+    width: 200px;
+}
+/*=====RentingPage Place and Date Fisnih=====*/
+
+/*=====RentingPage Car Section Start=====*/
+
+.Car_Box {
+    width: 25%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s;
+    float: left;
+    background-color: hwb(0 95% 5%);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.Car_Box-CarNameH {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.Car_Box-Detail {
+    margin-top: 2px;
+    text-align: start;
+}
+
+.Car_Box-Detail ul {
+    list-style-type: none;
+    text-align: start;
+}
+
+.Car_Box-img {
+    margin-bottom: 5px;
+    width: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.Car_Box-img img {
+    width: 250px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+
+.Car_Box .Car_Box-CarName {
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Car_Box-Price {
+    height: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.Car_Box .Car_Box-Detail {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.Car_Box .Car_Box-Detail a {
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 20px 10px;
+    border: 1px solid red;
+    text-decoration: none;
+    transition: ease 0.7s;
+}
+
+.Car_Box .Car_Box-Detail a:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/*=====RentingPage Car Section Finish=====*/
+
+
+/*=====RentingPage Register Start=====*/
+
+.Top {
+    margin: 2% 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+    height:180px;
+  }
+  
+  .FromWhereDiv,
+  .ToWhereDiv,
+  .DateRange {
+    display: flex;
+    align-items: center;
+  }
+  
+  .FromWhereDiv label,
+  .ToWhereDiv label,
+  .DateRange label {
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  
+  .FromWhereDiv select,
+  .ToWhereDiv select {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .DateRange input {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+
+  /* Register Form */
+  
+  .RegisterForm {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 27%;
+  }
+  
+  .RegisterForm h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .RegisterForm .Middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .RegisterForm .MidTop1,
+  .RegisterForm .MidTop2 {
+    flex-basis: 48%;
+  }
+  
+  .RegisterForm .MidTop12 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .RegisterForm label {
+    margin-bottom: 5px;
+  }
+  
+  .RegisterForm input[type="text"],
+  .RegisterForm input[type="number"],
+  .RegisterForm input[type="email"],
+  .RegisterForm input[type="tel"],
+  .RegisterForm textarea {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Rent Section */
+  
+  .RentDiv {
+    background-color: #f1f1f1;
+    padding: 20px;
+    align-items: center;
+    text-align: start;
+    width:30%;
+    margin-left: 27%;
+
+  }
+  
+  .RentDiv label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-items: center;
+
+  }
+  
+  .RentDiv button {
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 80%;
+  }
+  
+  .RentDiv button:hover {
+    background-color: greenyellow;
+  }
+  
+
+
+/**************************************footer**********************************/
+.MainFooter
+{
+background-color:black;
+margin-bottom: 0;
+height: 40%;
+width: 100%;
+display: flex;
+text-align: center;
+margin: 0% auto;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.Footer
+{
+    border: 1px solid white;
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    transition: ease 0.5s;
+    column-gap: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Footer1
+{
+    border: 1px solid black;
+    height: 100%;
+    width: 300px;
+    padding-left: 2%;
+}
+.Footer2
+{
+    border: 1px solid black;
+    height: 100%;
+    width: 300px;
+    padding-left: 2%;
+    color: white;
+    line-height: 25px;
+}
+
+.Footer3
+{
+    border: 1px solid black;
+    height: 100%;
+    width: 300px;
+    padding-left: 2%;
+}
+
+.Footer ul h6
+{
+    margin-top: 10px;
+    color: white;
+}
+
+.Footer ul li a
+{
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+}
+.Footer img
+{
+    width: 30px;
+    height: 30px;
+}

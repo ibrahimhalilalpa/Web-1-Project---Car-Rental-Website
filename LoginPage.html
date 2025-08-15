@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    
+</head>
+<body>
+    <script src="/Js/Firebase.js"></script>
+    <script src="LoginPage.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    
+<div class="Login">
+
+    
+    <div class="SignInForm" id="SignInForm">
+        <form id="SignIn-form">
+            <h1>SIGN IN</h1>
+            <input type="email" placeholder="Email" class="txt" id="emailIn">
+            <input type="password" placeholder="Password" class="txt" id="passwordIn">
+            <input type="button" value="Login" class="btn" id="SignIn" name="login">
+            <input type="button" id="fromSignIntoSignUp" value="Go to Sign Up">
+            <input type="button" id="resetbutton" value="Forgot Password?">
+            <a href="index.html">MainPage</a>
+
+        </form>
+    </div>
+    
+    <div class="SignUpForm" id="SignUpForm">
+        <form id="SignUp-form">
+            <h1>SIGN UP</h1>
+            <input type="text" placeholder="Full Name" class="txt" id="usernameUp" name="username">
+            <input type="email" placeholder="Email" class="txt" id="emailUp" name="email">
+            <input type="password" placeholder="Password" class="txt" id="passwordUp" name="password">
+    
+            <input type="button" value="Sign Up" class="btn" id="SignUp" name="signUp">
+            <input type="button" id="fromSignUptoSignIn" value="Go to Sign In" class="">
+
+        </form>
+    </div>
+    
+    
+    <div class="PasswordResetForm" id="PasswordResetForm">
+        <div id="Reset-form">
+            <h2>RESET PASSWORD</h2>
+            <input type="email" placeholder="Email" class="txt" id="resetEmail">
+            <input type="button" value="Confirm" class="btn" id="resetbtn" name="resetbtn">
+            <input type="button" id="fromResettoSignIn" value="Go to Sign In">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Slide every slideDelay seconds
+    const slideDelay = 5000;
+
+    const dynamicSlider = document.getElementById("slider").value;
+
+    var curSlide = 0;
+    window.setInterval(()=>{
+      curSlide++;
+      if (curSlide === dynamicSlider.childElementCount) {
+        curSlide = 0;
+      }
+
+      // Actual slide
+      dynamicSlider.firstElementChild.style.setProperty("margin-left", "-" + curSlide + "00%");
+    }, slideDelay);
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+{
+  "Cars": [
+    null,
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Suv",
+      "CarFuelType": "Petrol",
+      "CarGear": "Automatic",
+      "CarID": "1",
+      "CarModel": "2008",
+      "CarName": "Peugeot 2012",
+      "CarPassenger": "6",
+      "CarPrice": "400",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3APeugeot%202008**Peugeot%202008.png?alt=media&token=1f35c793-0a18-4485-b823-ac75f54b18c9"
+    },
+    {
+      "AgeLimit": "18",
+      "CarCategoriType": "Economic",
+      "CarFuelType": "Diesel",
+      "CarGear": "Manual",
+      "CarID": 2,
+      "CarModel": "2015",
+      "CarName": "Fiat Egea",
+      "CarPassenger": "4",
+      "CarPrice": "280",
+      "CarSuitcase": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AFiat%20Egea**Fiat%20Egea.png?alt=media&token=ac1d4bd4-5d9c-408a-a363-a42d3a5b603c"
+    },
+    {
+      "AgeLimit": "27",
+      "CarCategoriType": "Economic",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 3,
+      "CarModel": "2018",
+      "CarName": "Hyundai i20",
+      "CarPassenger": "5",
+      "CarPrice": "400",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AHyundai%20i20**Hyundai%20i20.png?alt=media&token=e0ad8b77-ecb1-4163-9a04-a1389631200e"
+    },
+    {
+      "AgeLimit": "30",
+      "CarCategoriType": "Suv",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 4,
+      "CarModel": "2020",
+      "CarName": "Peugeot 3008",
+      "CarPassenger": "6",
+      "CarPrice": "400",
+      "CarSuitcase": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3APeugeot%203008**Peugeot%203008.png?alt=media&token=2dc99b20-11c4-46e9-aaf5-09f80fae5e2b"
+    },
+    {
+      "AgeLimit": "21",
+      "CarCategoriType": "Top",
+      "CarFuelType": "Petrol",
+      "CarGear": "Automatic",
+      "CarID": 5,
+      "CarModel": "2021",
+      "CarName": "Mini Cooper Countryman",
+      "CarPassenger": "4",
+      "CarPrice": "350",
+      "CarSuitcase": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AMini%20Cooper%20Countryman**Mini%20Cooper%20Countryman.png?alt=media&token=d2c182fc-1e3c-46c0-bb2b-305acd377704"
+    },
+    {
+      "AgeLimit": "21",
+      "CarCategoriType": "Luxury",
+      "CarFuelType": "Petrol",
+      "CarGear": "Automatic",
+      "CarID": 6,
+      "CarModel": "2015",
+      "CarName": "BMW 5.20",
+      "CarPassenger": "5",
+      "CarPrice": "400",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ABMW%205.20**BMW%20520.png?alt=media&token=e25112aa-ccc5-4aa0-9684-7111a586e5fa"
+    },
+    {
+      "AgeLimit": "18",
+      "CarCategoriType": "Middle",
+      "CarFuelType": "Diesel",
+      "CarGear": "Manual",
+      "CarID": 7,
+      "CarModel": "2017",
+      "CarName": "Toyota Corolla",
+      "CarPassenger": "4",
+      "CarPrice": "300",
+      "CarSuitcase": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AToyota%20Corolla**Toyota%20Corolla.png?alt=media&token=a60808ee-ca60-4032-a393-e2611d930778"
+    },
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Minibus",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 8,
+      "CarModel": "2014",
+      "CarName": "Peugeot Traveller",
+      "CarPassenger": "10",
+      "CarPrice": "420",
+      "CarSuitcase": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3APeugeot%20Traveller**Peugeot%20Traveller.png?alt=media&token=97ac91fb-1047-4e8f-841f-742e29113eb6"
+    },
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Minibus",
+      "CarFuelType": "Diesel",
+      "CarGear": "Manual",
+      "CarID": 9,
+      "CarModel": "2017",
+      "CarName": "Mercedes Vito",
+      "CarPassenger": "10",
+      "CarPrice": "450",
+      "CarSuitcase": "5",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AMercedes%20Vito**Mercedes%20Vito.png?alt=media&token=979e1d54-70e0-4f97-a891-400bbcfeef3a"
+    },
+    {
+      "AgeLimit": "21",
+      "CarCategoriType": "Top",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 10,
+      "CarModel": "2013",
+      "CarName": "VW Passat",
+      "CarPassenger": "6",
+      "CarPrice": "380",
+      "CarSuitcase": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AVW%20Passat**VW%20Passat.png?alt=media&token=39e75c77-2252-4b5a-a2d9-14fe6bbbadf7"
+    },
+    {
+      "AgeLimit": "18",
+      "CarCategoriType": "Economic",
+      "CarFuelType": "LPG",
+      "CarGear": "Manual",
+      "CarID": 11,
+      "CarModel": "2013",
+      "CarName": "Renault Clio",
+      "CarPassenger": "5",
+      "CarPrice": "380",
+      "CarSuitcase": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ARenault%20Clio**Renault%20Clio.png?alt=media&token=eef4f330-cd3b-4781-ba5b-ba177763764b"
+    },
+    {
+      "AgeLimit": "21",
+      "CarCategoriType": "Middle",
+      "CarFuelType": "LPG",
+      "CarGear": "Manual",
+      "CarID": 12,
+      "CarModel": "2011",
+      "CarName": "Skoda Octavia",
+      "CarPassenger": "4",
+      "CarPrice": "280",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ASkoda%20Octavia**Skoda%20Octavia.png?alt=media&token=05fc51ca-35ef-4dba-94c8-501e5cf2970a"
+    },
+    {
+      "AgeLimit": "18",
+      "CarCategoriType": "Middle",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 13,
+      "CarModel": "2014",
+      "CarName": "Honda Civic",
+      "CarPassenger": "4",
+      "CarPrice": "300",
+      "CarSuitcase": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AHonda%20Civic**Honda%20Civic.png?alt=media&token=86e9fffc-8842-4172-b0a5-0ddb07f1f3ca"
+    },
+    {
+      "AgeLimit": "18",
+      "CarCategoriType": "Middle",
+      "CarFuelType": "Petrol",
+      "CarGear": "Manual",
+      "CarID": 14,
+      "CarModel": "2012",
+      "CarName": "Renault Megane",
+      "CarPassenger": "5",
+      "CarPrice": "250",
+      "CarSuitcase": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ARenault%20Megane**Renault%20Megane.png?alt=media&token=a8572a39-434b-4de9-b21f-21ec86bdf902"
+    },
+    {
+      "AgeLimit": "27",
+      "CarCategoriType": "Minibus",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 15,
+      "CarModel": "2015",
+      "CarName": "Ford Tourneo",
+      "CarPassenger": "9",
+      "CarPrice": "420",
+      "CarSuitcase": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AFord%20Tourneo**Ford%20Tourneo%20Courier.png?alt=media&token=bfb1e721-3e5e-4c07-bde6-0da776290acd"
+    },
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Suv",
+      "CarFuelType": "Diesel",
+      "CarGear": "Manual",
+      "CarID": 16,
+      "CarModel": "2017",
+      "CarName": "Dacia Duster 4X2",
+      "CarPassenger": "7",
+      "CarPrice": "350",
+      "CarSuitcase": "5",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ADacia%20Duster%204X2**Dacia%20Duster%204X2.png?alt=media&token=bba59ef1-1630-4472-a482-eb77a293d46c"
+    },
+    {
+      "AgeLimit": "18",
+      "CarCategoriType": "Top",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 17,
+      "CarModel": "2015",
+      "CarName": "BMW 1.16",
+      "CarPassenger": "4",
+      "CarPrice": "300",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ABMW%201.16**BMW%201_16.png?alt=media&token=c58b6817-ab4e-42b7-ba97-9b5de9ceb058"
+    },
+    {
+      "AgeLimit": "21",
+      "CarCategoriType": "Luxury",
+      "CarFuelType": "Petrol",
+      "CarGear": "Automatic",
+      "CarID": 18,
+      "CarModel": "2022",
+      "CarName": "Opel Mokka",
+      "CarPassenger": "4",
+      "CarPrice": "300",
+      "CarSuitcase": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AOpel%20Mokka**Opel%20Mokka.png?alt=media&token=425189f9-6d34-4e9d-a8b9-1bf35381368d"
+    },
+    {
+      "AgeLimit": "27",
+      "CarCategoriType": "Luxury",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 19,
+      "CarModel": "2019",
+      "CarName": "Mercedes E200",
+      "CarPassenger": "5",
+      "CarPrice": "400",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3AMercedes%20E200**Mercedes%20E200%202_0.png?alt=media&token=0a3d0ec4-3ee1-4b78-bfdd-d85d02f663e4"
+    },
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Suv",
+      "CarFuelType": "Electric",
+      "CarGear": "Automatic",
+      "CarID": 20,
+      "CarModel": "2020",
+      "CarName": "Suzuki Vitara",
+      "CarPassenger": "6",
+      "CarPrice": "350",
+      "CarSuitcase": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A--Carname%3ASuzuki%20Vitara**Suzuki%20Vitara.png?alt=media&token=a7ea906a-1769-4f41-82b2-9c509b389e84"
+    },
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Truck",
+      "CarFuelType": "Petrol",
+      "CarGear": "Manual",
+      "CarID": 21,
+      "CarModel": "2018",
+      "CarName": "Nissan Navara",
+      "CarPassenger": "4",
+      "CarPrice": "400",
+      "CarSuitcase": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A21--Carname%3ANissan%20Navara**Nissan%20Navara.png?alt=media&token=1da48318-2c9b-438c-a092-c7a3e4c0c1bb"
+    },
+    {
+      "AgeLimit": "24",
+      "CarCategoriType": "Luxury",
+      "CarFuelType": "Diesel",
+      "CarGear": "Automatic",
+      "CarID": 22,
+      "CarModel": "2014",
+      "CarName": "BMW 3.20i",
+      "CarPassenger": "7",
+      "CarPrice": "440",
+      "CarSuitcase": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A22--Carname%3ABMW%203.20i**BMW%20320i.png?alt=media&token=ff1a1a26-0b0d-4fe6-86ca-2f2149489f6f"
+    },
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FCarId%3A147--Carname%3APeugeot%202012**Mercedes%20E200%2020.png?alt=media&token=a573d0b6-4e07-4a93-8740-6173d944d4ee"
+    }
+  ],
+  "Counter": 23,
+  "ImagesLinks": {
+    "Contact-Facebook": {
+      "ImgName": "Contact-Facebook.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FContact-Facebook.png?alt=media&token=626b71d2-1305-4f4a-883b-000942d0fc72"
+    },
+    "Contact-GitHub": {
+      "ImgName": "Contact-GitHub.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FContact-GitHub.png?alt=media&token=66bd6c1b-5666-40cf-bdcd-a7c5fcb6940a"
+    },
+    "Contact-Instagram": {
+      "ImgName": "Contact-Instagram.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FContact-Instagram.png?alt=media&token=11d56b90-4d42-4806-9010-cad3e6cbdbd5"
+    },
+    "Contact-Mail": {
+      "ImgName": "Contact-Mail.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FContact-Mail.png?alt=media&token=938ac062-f9fd-47b7-93cf-7bfc869b1bcd"
+    },
+    "MainBackground": {
+      "ImgName": "MainBackground.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FMainBackground.png?alt=media&token=271a3e9f-1cd2-492b-ba35-e1c1b53cd193"
+    },
+    "MudurYar1": {
+      "ImgName": "MudurYar1.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FMudurYar1.jpg?alt=media&token=bc63d9d6-f8dd-4ce1-9e23-8102cf8e2599"
+    },
+    "Screenshot 2022-12-23 234733": {
+      "ImgName": "Screenshot 2022-12-23 234733.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FScreenshot%202022-12-23%20234733.png?alt=media&token=c7c51eaf-48d4-4b4d-b4f7-4a830048eb1e"
+    },
+    "Sponsor-Trendyol": {
+      "ImgName": "Sponsor-Trendyol.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FSponsor-Trendyol.png?alt=media&token=d50611ef-dc3c-4b52-abb8-1dd79a3b6ef6"
+    },
+    "Sponsor-YemekSepeti": {
+      "ImgName": "Sponsor-YemekSepeti.png",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2FSponsor-YemekSepeti.png?alt=media&token=6ab3428d-5048-476d-b32a-829f78f81208"
+    },
+    "bg": {
+      "ImgName": "bg.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fbg.jpg?alt=media&token=c21994a5-08aa-4b79-b522-ffa98c5aac48"
+    },
+    "bg1": {
+      "ImgName": "bg1.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fbg1.jpg?alt=media&token=0216dcc3-52ad-4223-a13d-6a88c0a858c7"
+    },
+    "car": {
+      "ImgName": "car.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fcar.jpg?alt=media&token=df86a3b9-e7f3-48f3-91e7-0dc06a373192"
+    },
+    "cengiz": {
+      "ImgName": "cengiz.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fcengiz.jpg?alt=media&token=5999e1eb-b7e5-4e88-b021-b47512b9cf75"
+    },
+    "infoabg": {
+      "ImgName": "infoabg.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Finfoabg.jpg?alt=media&token=8a6945a6-f629-446a-afe4-372849671777"
+    },
+    "infobg": {
+      "ImgName": "infobg.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Finfobg.jpg?alt=media&token=a5098d41-daed-4578-9084-4b0a99577702"
+    },
+    "pciture": {
+      "ImgName": "pciture.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fpciture.jpg?alt=media&token=a29f0a46-a98d-4ede-b474-85c36208e294"
+    },
+    "slider1": {
+      "ImgName": "slider1.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fslider1.jpg?alt=media&token=3254ae13-1de1-44af-b21a-82ccd5ed3c58"
+    },
+    "slider2": {
+      "ImgName": "slider2.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fslider2.jpg?alt=media&token=785c72f1-ba98-4ecd-a572-4cc888528309"
+    },
+    "slider25": {
+      "ImgName": "slider25.jpg",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/alparentacar-3ea85.appspot.com/o/Images%2Fslider25.jpg?alt=media&token=ddeebdfc-49f4-4ae0-b89c-15dc9608e97b"
+    }
+  }
+}
